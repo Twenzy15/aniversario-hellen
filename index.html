@@ -15,23 +15,32 @@
             position: relative;
         }
 
-        .background-text {
-            position: absolute;
+         .background-text {
+            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             z-index: -1;
-            font-size: 4em;
+            background: repeating-linear-gradient(
+                rgba(255, 255, 255, 0.1),
+                rgba(255, 255, 255, 0.1) 50px,
+                transparent 50px,
+                transparent 100px
+            );
             color: rgba(255, 255, 255, 0.1);
-            text-align: center;
+            font-size: 3em;
             white-space: pre-wrap;
-            overflow: hidden;
             line-height: 1.5;
             pointer-events: none;
+            overflow: hidden;
+        }
+
+        .background-text:before {
+            content: "I love you. Eu te amo.";
+            display: block;
+            text-align: center;
+            padding-top: 90px;
         }
 
         .container {
