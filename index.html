@@ -12,10 +12,31 @@
             color: #fff;
             text-align: center;
             overflow-x: hidden;
+            position: relative;
+        }
+
+        .background-text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: -1;
+            font-size: 4em;
+            color: rgba(255, 255, 255, 0.1);
+            text-align: center;
+            white-space: pre-wrap;
+            overflow: hidden;
+            line-height: 1.5;
+            pointer-events: none;
         }
 
         .container {
             padding: 50px;
+            position: relative;
         }
 
         h1 {
@@ -100,6 +121,9 @@
     </style>
 </head>
 <body>
+    <div class="background-text">
+        Je t'aime | I love you | Ich liebe dich | Ti amo | Eu te amo | Te quiero | 我爱你 | 愛してる | 사랑해 | Я тебя люблю | Jeg elsker deg
+    </div>
     <div class="container">
         <h1>🎉 Feliz Aniversário, Bilu! 🎂</h1>
         <p>Que o seu dia (ontem) seja (tenha sido) repleto de alegria, amor e momentos inesquecíveis! 🥳</p>
